@@ -75,7 +75,7 @@
             <div class="id-card-container">
 
                 <!-- Digital ID Card 1: Bharat Bhai Solanki -->
-                <div class="id-card" data-aos="fade-up">
+                <div class="id-card" data-aos="fade-up" data-modal="modal-bharat" style="cursor: pointer;">
                     <div class="id-card-header">
                         <div class="id-brand">
                             <img src="img4.jpeg" alt="Logo" class="id-logo">
@@ -142,7 +142,7 @@
                 </div>
 
                 <!-- Digital ID Card 2: Rajubhai Rathava -->
-                <div class="id-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="id-card" data-aos="fade-up" data-aos-delay="100" data-modal="modal-raju" style="cursor: pointer;">
                     <div class="id-card-header header-blue">
                         <div class="id-brand">
                             <img src="img4.jpeg" alt="Logo" class="id-logo">
@@ -212,6 +212,66 @@
         </div>
     </section>
 
+    <!-- Modal for Bharat Bhai Solanki -->
+    <div id="modal-bharat" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-header">
+                <h2>Bharat Bhai Solanki - Electrical Installation Certificate</h2>
+                <p>ELECTRICAL PROJECTS SITE INCHARGE</p>
+            </div>
+            <div class="modal-body">
+                <iframe src="KANHA BHARAT BHAI EI.pdf" class="pdf-viewer"></iframe>
+                <div class="modal-actions">
+                    <a href="KANHA BHARAT BHAI EI.pdf" download class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download Certificate</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Rajubhai Rathava -->
+    <div id="modal-raju" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-header">
+                <h2>Rajubhai Rathava - Electrical Installation Certificate</h2>
+                <p>ELECTRICAL SUPERVISOR</p>
+            </div>
+            <div class="modal-body">
+                <iframe src="Rajubhai EI.pdf" class="pdf-viewer"></iframe>
+                <div class="modal-actions">
+                    <a href="Rajubhai EI.pdf" download class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download Certificate</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -250,7 +310,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=2"></script>
 </body>
 
 </html>
