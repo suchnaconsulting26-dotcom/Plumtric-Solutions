@@ -203,6 +203,18 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // ================================================
+  // SERVICE TOGGLE
+  // ================================================
+  const serviceToggles = document.querySelectorAll('.btn-service-toggle');
+  
+  serviceToggles.forEach(toggle => {
+    toggle.addEventListener('click', function() {
+      serviceToggles.forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  // ================================================
   // CONTACT FORM
   // ================================================
   const contactForm = document.getElementById("contact-form");
@@ -441,6 +453,19 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
+
+  // ================================================
+  // HERO SLIDER
+  // ================================================
+  const sliderImages = document.querySelectorAll('.slider-img');
+  if (sliderImages.length > 0) {
+    let currentIdx = 0;
+    setInterval(() => {
+      sliderImages[currentIdx].classList.remove('active');
+      currentIdx = (currentIdx + 1) % sliderImages.length;
+      sliderImages[currentIdx].classList.add('active');
+    }, 5000); // 5 seconds interval
+  }
 
   console.log("🔧 Plumtric Solutions - Website Loaded Successfully");
 });
