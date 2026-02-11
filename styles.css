@@ -1853,6 +1853,7 @@ img {
     max-width: 100%;
     text-align: center;
     margin-bottom: clamp(24px, 5vw, 40px);
+    left: 0; /* Reset left positioning for mobile center alignment */
   }
 
   .hero-cta-group {
@@ -1865,7 +1866,7 @@ img {
 
   .hero-visual {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
   }
 
@@ -1873,6 +1874,7 @@ img {
     display: none;
     /* Hide floating cards on smaller screens to prevent overlap/overflow */
   }
+
 
   .about-grid {
     grid-template-columns: 1fr;
@@ -2142,4 +2144,18 @@ img {
     font-size: 15px;
     color: var(--gray-600);
     line-height: 1.6;
+}
+
+
+/* Specific fix for Index Services Section Spacing */
+#services.services {
+  padding: 20px 0; /* Reduced top/bottom padding further */
+}
+
+#services .section-header {
+  margin-bottom: 0; /* Remove bottom margin since there's no grid below */
+}
+
+#services .services-preview-cta {
+  margin-top: 32px; /* Add specific spacing for the button */
 }
